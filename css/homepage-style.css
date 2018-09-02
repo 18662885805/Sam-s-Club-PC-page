@@ -1,0 +1,191 @@
+@charset "utf-8";
+
+*{ margin:0; padding:0; list-style: none;}
+* {box-sizing:border-box; }
+img{ display: block;}
+body{ width: 1350px; background:  #f8f8f8;}
+a{ text-decoration: none; }
+.nav{ width: 100%; height: 142px; background: #0069aa;}
+.nav .nav_top{ width: 100%; height: 34px; border-bottom: 1px solid #005d9f; position: relative;}
+	.nav_top .nav_top_login{ width: 180px; height: 100%;  position: absolute; left: 73px;
+	text-align: center; line-height: 34px; font-size: 10px; color: #8fccf8;} 
+		.nav_top_login a{color: white;}
+	.nav_top .nav_top_list{position: absolute; right: 73px; height: 100%; width: 432px;padding-top: 2px;}
+		.nav_top_list ul { display: flex; justify-content: space-between;align-self: center;}
+		.nav_top_list ul li {color: #8fccf8; width:78px;height:28px; line-height: 28px; font-size: 10px;float: left; position: relative; padding-left: 5px;}
+			.nav_top_list ul li img { position: absolute; right:4px; top: 10px;}
+			.nav_top_list ul li ul{position: absolute; width:100px;  background: #f3f8fc; z-index:3; left: -10px;top:36px; display: none;padding: 3px;}
+				.nav_top_list  #nav_top_list_1_ul {height: 200px;}	
+					 #nav_top_list_1_ul li{ color: black;}
+					 #nav_top_list_1_ul li:hover{ color:#0069aa ;}
+				.nav_top_list  #nav_top_list_2_ul {height: 150px; }
+				 	#nav_top_list_2_ul li{ color: black;}
+				 	#nav_top_list_2_ul li:hover{ color:#0069aa ;}
+				.nav_top_list  #nav_top_list_3_ul {height: 80px; }
+					 #nav_top_list_3_ul li{ color: black;}
+					 #nav_top_list_3_ul li:hover{ color:#0069aa ;}
+				.nav_top_list  #nav_top_list_5_ul {height: 130px; width: 200px;left: -110px; background-image:url(../img/nav-wechat.JPG);}
+					 #nav_top_list_5_ul li{ color: black;}
+			
+			
+.nav .nav_mid{ width: 100%; height: 68px; position: relative;}
+	.nav_mid #nav-mid-logo{ position: absolute; left: 73px;}
+	.nav_mid #address { width: 270px; height: 30px;  position: absolute;left: 330px; top: 19px; line-height: 30px;}
+		#address p{float: left;}
+		#address p:nth-child(1){ font-size: 20px;color: white;}
+		#address p:nth-child(2){ font-size: 16px;color: #8fccf8;}
+		#address a{display: block;float:right; width: 70px; height: 30px; background:#1b78b5; border: solid 1px #8fccf8; font-size: 10px; line-height: 30px; text-align: center;color: #8fccf8;}
+	.nav_mid #myshopping{ width: 100px; height: 30px; line-height: 30px;position: absolute;
+	right: 75px;top: 19px;border:1px solid #62b5e7;text-align: center;}
+	.nav_mid #myshopping a{ color:#62b5e7 ;font-size: 10px;}
+
+/*导航栏模块*/
+.nav .nav_bot{ width: 100%; height: 40px; background: #004b8e; text-align: center;display: flex; justify-content: center; }
+	.nav-bot-list{ width: 1204px; height:100%; display: flex;justify-content: space-around;}
+		.nav-bot-list li{position: relative;width: 110px;height: 40px; line-height: 40px; color:#FFFFFF;font-size: 14px;}
+			.nav-bot-list li a{ color: white;}
+			.navactive{ background:#f1f1f1; border-left: 2px solid #004b8e; border-right: 2px solid #004b8e;}
+			/*x下拉菜单*/
+			.nav-bot-list li div{height: 340px; background:#f1f1f1; position: absolute;z-index: 1;display: none;
+				border-left: 2px solid #004b8e;border-bottom: 2px solid #004b8e;border-right: 2px solid #004b8e;padding: 15px; }				
+			.nav-bot-list li:nth-child(1) div{width: 530px;left: -2px;}	
+			.nav-bot-list li:nth-child(2) div{width: 788px;left: -2px;}
+			.nav-bot-list li:nth-child(3) div{width: 532px;left: -2px;}
+			.nav-bot-list li:nth-child(4) div{width: 662px;left: -2px;}
+			.nav-bot-list li:nth-child(5) div{width: 404px;left: -2px;}
+			.nav-bot-list li:nth-child(6) div{width: 534px;left: -2px;}
+			.nav-bot-list li:nth-child(7) div{width: 532px;right: -2px;}
+			.nav-bot-list li:nth-child(8) div{width: 660px;right: -2px;}
+			.nav-bot-list li:nth-child(9) div{width: 404px;right: -2px;}
+			.nav-bot-list li:nth-child(10) div{width: 916px;right: -2px;}
+			.nav-bot-list li:nth-child(11) div{width: 404px;right: -2px;}
+			/*下拉菜单表格模块！*/
+				.nav-bot-list li div table {width: 100%; height:310px;}
+				.nav-bot-list li div table a{ text-decoration: none; color: black;}
+				/*.nav-bot-list li div table a:hover{color:#0069aa;}*/
+				.nav-bot-list li div table tr{ height: 22px; line-height: 22px; text-align: left;}
+				.nav-bot-list li div table tr.head{ font-size: 18px; font-weight: bold; }
+				.nav-bot-list li div table td{ width: 116px;}
+				
+				
+			
+/*轮播图模块*/	
+.banner{ width: 100%; height: 400px;position: relative; overflow: hidden;}
+	.imgbox li { position: absolute; width: 1350px;}	
+	.imgbtn{width: 810px; height: 34px; display: flex; justify-content: space-between; position: absolute;left: 270px; bottom:6px;} 
+		.imgbtn li{width: 110px; height: 100%;  background: #f3f8fc; text-align: center; line-height: 34px; 
+			color: #31363c;font-size: 10px; opacity: 0.9;cursor: pointer;}
+		
+
+/*大叔推荐模块*/
+#recommend{ width: 100%; height: 840px; background: #f8f8f8; padding-left: 75px; padding-right: 75px;}
+	#recommend_title{ width: 1200px; height: 80px; text-align: center; line-height: 80px; font-size: 20px; font-weight: bold;} 
+	#recommend_box{ width: 1200px; height: 760px; }		
+		#recommend_box dl{display:block; width: 240px; height: 380px; float: left;
+		padding-left: 12px; padding-right: 12px; padding-top: 15px; padding-bottom: 15px;}
+		#recommend_box dl:hover{ background: white;}	
+			#recommend_box dl dt{width: 216px; height: 216px;}
+			#recommend_box dl dd{ width: 216px; height: 134px; }
+				
+				#recommend_box dl dd p { width: 100%; height: 67px; text-align: center;}
+				#recommend_box dl dd p:nth-child(1){ border-bottom: 1px  #8b8b8b dashed;}
+				#recommend_box dl dd p:nth-child(1) span:nth-child(2) {font-weight:bold;line-height: 33px;}
+				#recommend_box dl dd p:nth-child(2) span{font-size: 12px; color: #8b8b8b;line-height: 33px;}
+				
+					
+					
+
+/*会员热购模块*/
+#bestbuy{ width: 100%;  background: #f8f8f8; padding-left: 75px; padding-right: 75px;}
+	#bestbuy_title{ width: 1200px; height: 80px; text-align: center; line-height: 80px; font-size: 20px; font-weight: bold;} 
+	#bestbuy_box{ width: 1200px; }
+		#bestbuy_box div{ width: 1200px; height: 296px; margin-bottom: 30px; overflow: hidden;}
+			#bestbuy_box div p{width: 240px; height: 296px;  float: left; position: relative;}
+				#bestbuy_box div p span{ width: 240px; height:80px; position: absolute; bottom: 0; display: flex; justify-content: space-around;}
+					#bestbuy_box div p span span{display: block; width:60px; height:78px; float: left; 
+					 position: relative;padding: 5px; }
+						#bestbuy_box div p span span a{font-size: 10px;color: #f8f8f8;text-decoration: none; }					
+			#bestbuy_box div:nth-child(1) p:nth-child(1){ background: #80bc0e; background-image:url(../img/fresh-left.JPG); background-repeat: no-repeat;}
+			#bestbuy_box div:nth-child(2) p:nth-child(1){ background: #f68696;background-image: url(../img/snack-left.JPG);background-repeat: no-repeat;}
+			#bestbuy_box div:nth-child(3) p:nth-child(1){ background: #7955c1;;background-image:url(../img/baby-left.JPG);background-repeat: no-repeat;}
+			#bestbuy_box div:nth-child(4) p:nth-child(1){ background: #1777dd;background-image: url(../img/cleaning-left.JPG);background-repeat: no-repeat;}
+			#bestbuy_box div:nth-child(5) p:nth-child(1){ background: #1777dd;background-image: url(../img/digital-left.JPG);background-repeat: no-repeat;}
+			#bestbuy_box div div{  width: 960px; height: 296px; float:right; overflow: hidden; position: relative;}
+				#bestbuy_box div div div{ width:2000px; height: 296px;float: left;}
+					#bestbuy_box div div dl{ width: 240px; height: 296px; background: white;padding:12px ; position: absolute;}
+					
+					#bestbuy_box div div dl:hover{ color:#004B8E ; }
+					#bestbuy_box i{ cursor: pointer; color:#004B8E; font-size: 20px;}
+					#bestbuy_box div div dl dd{ height: 68px; width: 100%; text-align: center;display: flex; flex-direction: column; justify-content: space-around;padding: 10px;}
+						#bestbuy_box div div dl dd span:nth-child(1){ font-size: 14px;}
+						#bestbuy_box div div dl dd span:nth-child(2){ font-size: 18px; font-weight: bold;}
+				#bestbuy_box div div p{ width:20px; height: 60px; background:grey; position: absolute; top:108px;color: white;
+				font-size: 20px; line-height: 60px; opacity: 0; }
+				#bestbuy_box div div p:hover{ opacity: 0.5;}						
+				#bestbuy_box div div p:nth-child(1){ left: 0;}
+				#bestbuy_box div div p:nth-child(2){ right: 0;}
+				
+					
+		
+				
+
+#samskitchen{ width: 100%; height:530px; background: #f8f8f8; padding-left: 75px; padding-right: 75px;}
+	#samskitchen_left{ width: 480px; height: 530px;  float: left; background-image: url(../img/kitchenleft.jpg);}
+	#samskitchen_right{ width: 720px; height: 530px; float: left; background:white;padding: 30px;}
+		#samskitchen_right_top{ width: 660px; height: 100px;border-bottom: 1px solid #eeeeee;}
+			#samskitchen_right_top h1:nth-child(2){ font-weight: normal; color: #999b9a;}
+		#samskitchen_right_middle{ width: 660px; height: 70px; line-height: 70px;}
+		#samskitchen_right_bottom{ width: 660px; height: 300px;overflow: hidden;position: relative;}
+			#samskitchen_right_bottom div{ width: 900px; height: 300px; float: left;}
+				#samskitchen_right_bottom div dl{ width: 220px; height: 300px;position: absolute;}
+				#samskitchen_right_bottom div dl dt{ width: 220px; height: 142px;}
+				#samskitchen_right_bottom div dl dd{ width: 220px; height: 158px; text-align: center; line-height: 30px;
+				position: relative;}
+					#samskitchen_right_bottom div dl dd span{ font-weight: bold;}
+					#samskitchen_right_bottom div dl dd h5{ font-weight: normal;color: #999b9a;}
+					#samskitchen_right_bottom div dl dd a{ display: block; width: 86px; height: 32px; text-decoration: none; 
+					position: absolute; bottom: 0; left: 67px; background: #52b014; text-align: center; line-height: 32px; font-size: 14px;
+					color: white; border-radius: 3px;}
+				#bestbuy_next6, #bestbuy_prev6{width:20px; height: 60px; background:grey; position: absolute; top:108px;color: white;
+					font-size: 20px; line-height: 60px; opacity:0; }				
+				#bestbuy_next6{right: 0;}
+				#bestbuy_prev6{left: 0;}
+				#bestbuy_next6:hover{ opacity:0.5;}
+				#bestbuy_prev6:hover{opacity:0.5;}
+		
+
+
+#different{width: 100%; height:750px; background: #f8f8f8; padding-left: 75px; padding-right: 75px;}
+	#different_title{ width: 1200px; height: 80px; text-align: center; line-height: 80px; font-size: 20px; font-weight: bold;} 
+	#different_box{ width: 1200px;height: 670px; }
+		#different_left{ width: 310px; height: 670px; background: url(../img/ChEwolsJbcuAP6OZAAFs02wbykU06100.jpg); background-position: top;
+		background-repeat: no-repeat; position: relative; float: left;}
+			#different_left img{ position: absolute; bottom: 0;}
+		#different_right{ width: 880px; height: 670px; float: right;overflow-y: scroll; padding: 10px;}
+			#different_right div{ width:400px; height: 94px;  padding: 10px;}
+				#different_right div div{ width: 100%; height: 46px; padding: 0;}
+					#different_right div div img{float: left;}
+					#different_right div div p{ font-size: 14px; font-weight: bold;}
+					#different_right div div a{ text-decoration: none; color: #9b9b9b; font-size: 14px;}
+					#different_right div  span{ float: left; color: #9b9b9b; font-size: 14px;}
+
+
+#spirit{width: 100%; height:100px; background: #f8f8f8; padding-left: 75px; padding-right: 75px; margin-top: 10px; margin-bottom: 10px;
+display: flex; justify-content: space-between;}
+
+
+footer{ width: 100%; height: 300px;background: #ebebeb;position: relative; }
+	footer #footer_logo_1{ position: absolute; left: 112px; top: 0;}
+	footer #footer_logo_2{ position: absolute; right: 140px; top: 200px;} 
+	footer a{ text-decoration: none;}
+	footer #footer_top{ width: 100%; height: 30px; background: #e6e6e6; }
+	footer #footer_middle{ width: 100%; height: 170px; }
+	footer #footer-bottom{ width: 100%; height: 100px;display: flex; justify-content: center; align-items: flex-start;}
+	footer #footer_connect{width: 1008px; height: 175px; position: absolute;
+	top: 0; left: 266px;}
+		#footer_connect dl{ width: 168px; height: 175px; float: left; }
+			#footer_connect dl dt{ width: 100%; height: 30px; line-height: 30px;}
+			#footer_connect dl dt a{ font-size: 14px; color: black;}
+			#footer_connect dl dd{ width: 100%; height: 145px; border-top: 16px; line-height: 25px;
+			display: flex; flex-direction: column;}
+			#footer_connect dl dd a{font-size: 10px; color: #686868;}

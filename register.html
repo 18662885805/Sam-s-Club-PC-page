@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>山姆会员店-注册</title>
+		<style type="text/css">
+			*{ margin:0; padding:0; list-style: none;}
+			* {box-sizing:border-box; }			
+			body{ width: 1350px; background:  #f8f8f8;
+			display: flex;flex-direction: column; justify-content: center; align-items: center;}
+			header{ width: 100%; height: 264px;background:  #f8f8f8; border-bottom: 1px solid darkgrey;
+				display: flex;flex-direction: column; justify-content: center; align-items: center;}
+			#box{ width: 450px; height: 750px; }
+				#box #membercard{ width: 100%; height: 218px; display: flex; justify-content: space-between; align-items: center;}
+				#box #infobox{ width: 100%; height: 450px;
+				display: flex;flex-direction: column; align-items: center;}
+					#infobox input{ width: 448px; height: 40px; border: 1px solid darkgray; border-radius: 3px;}
+					#infobox span{ display:block;width: 100%; height:30px; line-height:30px; font-size: 10px; color: darkgrey;}
+					#infobox div{width: 100%; height: 40px; font-size: 10px;}
+					#infobox div #conditions{ width: 10px; height: 10px; }
+					#infobox #btn{ width: 220px; height: 50px; border-radius: 3px; background: #006aae;
+					text-align: center; line-height: 50px; color: white; font-size: 20px; font-weight: bold;}
+		</style>
+	</head>
+	<body>
+		<header>
+			<a href="#"><img src="img/loginlogo.png" /></a>
+			<p>——  欢迎注册   ——</p>
+		</header>
+		<div id="box">
+			<div id="membercard">
+				<a href="#"><img src="img/zhuce_03.jpg" /></a>
+				<a href="login.html"><img src="img/denglu_03.jpg" /></a>
+			</div>
+			<div id="infobox">
+				<input type="text" name="" id="user" value="" placeholder="用户名"/>
+				<span>4-20位字符，可中文、英文、数字</span>
+				<input type="text" name="" id="email" value="" placeholder="邮箱地址"/>
+				<span>请输入常用邮箱地址</span>
+				<input type="password" name="" id="pass1" value="" placeholder="设置密码"/>
+				<span>6-20位字符，可由大小写英文、数字或符号组成</span>
+				<input type="password" name="" id="pass2" value="" placeholder="确认密码"/>
+				<span></span>
+				<input type="text" name="" id="phone" value="" placeholder="您的手机号"/>
+				<span></span>
+				<div>
+					<input type="checkbox" name="" id="conditions" />订阅优惠信息<br />
+					<input type="checkbox" name="" id="conditions" />我已阅读并同意<a href="#">山姆网站使用条款</a>
+				</div>	
+				<span></span>
+				<input type="button" name="" id="btn" value="提交" />				
+			</div>			
+		</div>
+		
+		
+	</body>
+	<script type="text/javascript" src="libs/jquery.js" charset="UTF-8"></script>
+	<script type="text/javascript">
+		//正则验证
+//		var infobox = document.getElementById("infobox")
+//		var user = document.getElementById("user");
+//		var pass1 = document.getElementById("pass1");
+//		var pass2 = document.getElementById("pass2");
+//		var reg1 = /^[a-z0-9_-]{4,20}$/;
+//		
+//		user.onblur = function () {			
+//			if (!reg1.test(user.value)) {
+//				user.style.border = "1px solid red";
+//				infobox.querySelectorAll("span")[0].innerHTML = "请输入正确的用户名！";				
+//			}
+//		}
+		
+		
+		//ajax数据注册
+		$("#btn").click(function(){
+			$.ajax({			
+				url:"http://datainfo.duapp.com/shopdata/userinfo.php",
+				data:{
+					status:"register",
+					userID:$("#user").val(),
+					password:$("#pass2").val(),				
+				},
+				success:function(res){
+					switch (res){
+						case "0":alert("用户名重名")
+							break;
+						case "1":alert("注册成功，跳转至登录页面");
+							setInterval(function(){
+								location.href = "login.html"
+							},1000)
+							break;
+						case "2":alert("网络错误，请重试");
+							break;
+					}
+				}
+			})
+		})
+		
+	</script>
+</html>

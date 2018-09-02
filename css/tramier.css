@@ -1,0 +1,168 @@
+@charset "utf-8";
+
+*{ margin:0; padding:0; list-style: none;}
+* {box-sizing:border-box; }
+img{ display: block;}
+body{ width: 1350px; background:  #f8f8f8;}
+a{ text-decoration: none; }
+.nav{ width: 100%; height: 142px; background: #0069aa;}
+.nav .nav_top{ width: 100%; height: 34px; border-bottom: 1px solid #005d9f; position: relative;}
+	.nav_top .nav_top_login{ width: 180px; height: 100%;  position: absolute; left: 73px;
+	text-align: center; line-height: 34px; font-size: 10px; color: #8fccf8;} 
+		.nav_top_login a{color: white;}
+	.nav_top .nav_top_list{position: absolute; right: 73px; height: 100%; width: 432px;padding-top: 2px;}
+		.nav_top_list ul { display: flex; justify-content: space-between;align-self: center;}
+		.nav_top_list ul li {color: #8fccf8; width:78px;height:28px; line-height: 28px; font-size: 10px;float: left; position: relative; padding-left: 5px;}
+			.nav_top_list ul li img { position: absolute; right:4px; top: 10px;}
+			.nav_top_list ul li ul{position: absolute; width:100px;  background: #f3f8fc; z-index:3; left: -10px;top:36px; display: none;padding: 3px;}
+				.nav_top_list  #nav_top_list_1_ul {height: 200px;}	
+					 #nav_top_list_1_ul li{ color: black;}
+					 #nav_top_list_1_ul li:hover{ color:#0069aa ;}
+				.nav_top_list  #nav_top_list_2_ul {height: 150px; }
+				 	#nav_top_list_2_ul li{ color: black;}
+				 	#nav_top_list_2_ul li:hover{ color:#0069aa ;}
+				.nav_top_list  #nav_top_list_3_ul {height: 80px; }
+					 #nav_top_list_3_ul li{ color: black;}
+					 #nav_top_list_3_ul li:hover{ color:#0069aa ;}
+				.nav_top_list  #nav_top_list_5_ul {height: 130px; width: 200px;left: -110px; background-image:url(../img/nav-wechat.JPG);}
+					 #nav_top_list_5_ul li{ color: black;}
+			
+			
+.nav .nav_mid{ width: 100%; height: 68px; position: relative;}
+	.nav_mid #nav-mid-logo{ position: absolute; left: 73px;}
+	.nav_mid #address { width: 270px; height: 30px;  position: absolute;left: 330px; top: 19px; line-height: 30px;}
+		#address p{float: left;}
+		#address p:nth-child(1){ font-size: 20px;color: white;}
+		#address p:nth-child(2){ font-size: 16px;color: #8fccf8;}
+		#address a{display: block;float:right; width: 70px; height: 30px; background:#1b78b5; border: solid 1px #8fccf8; font-size: 10px; line-height: 30px; text-align: center;color: #8fccf8;}
+
+
+
+/*导航栏模块*/
+.nav .nav_bot{ width: 100%; height: 40px; background: #004b8e; text-align: center;display: flex; justify-content: center; }
+	.nav-bot-list{ width: 1204px; height:100%; display: flex;justify-content: space-around;}
+		.nav-bot-list li{position: relative;width: 110px;height: 40px; line-height: 40px; color:#FFFFFF;font-size: 14px;}
+			.nav-bot-list li a{ color: white;}
+			.navactive{ background:#f1f1f1; border-left: 2px solid #004b8e; border-right: 2px solid #004b8e;}
+			/*x下拉菜单*/
+			.nav-bot-list li div{height: 340px; background:#f1f1f1; position: absolute;z-index: 1;display: none;
+				border-left: 2px solid #004b8e;border-bottom: 2px solid #004b8e;border-right: 2px solid #004b8e;padding: 15px; }				
+			.nav-bot-list li:nth-child(1) div{width: 530px;left: -2px;}	
+			.nav-bot-list li:nth-child(2) div{width: 788px;left: -2px;}
+			.nav-bot-list li:nth-child(3) div{width: 532px;left: -2px;}
+			.nav-bot-list li:nth-child(4) div{width: 662px;left: -2px;}
+			.nav-bot-list li:nth-child(5) div{width: 404px;left: -2px;}
+			.nav-bot-list li:nth-child(6) div{width: 534px;left: -2px;}
+			.nav-bot-list li:nth-child(7) div{width: 532px;right: -2px;}
+			.nav-bot-list li:nth-child(8) div{width: 660px;right: -2px;}
+			.nav-bot-list li:nth-child(9) div{width: 404px;right: -2px;}
+			.nav-bot-list li:nth-child(10) div{width: 916px;right: -2px;}
+			.nav-bot-list li:nth-child(11) div{width: 404px;right: -2px;}
+			/*下拉菜单表格模块！*/
+				.nav-bot-list li div table {width: 100%; height:310px;}
+				.nav-bot-list li div table a{ text-decoration: none; color: black;}
+				/*.nav-bot-list li div table a:hover{color:#0069aa;}*/
+				.nav-bot-list li div table tr{ height: 22px; line-height: 22px; text-align: left;}
+				.nav-bot-list li div table tr.head{ font-size: 18px; font-weight: bold; }
+				.nav-bot-list li div table td{ width: 116px;}
+				
+/*商品详情主体*/
+
+/*顶部导航栏*/
+#body_top{ width: 100%; height: 70px; padding-left: 75px; padding-right: 75px;
+display: flex; align-items: center;}
+	#body_top a{display:block;text-decoration: none; color:white; font-size: 14px;width: 80px; height: 30px; 
+	border: #62B5E7;background: #004C8E;line-height:30px ;text-align: center;}
+	
+/*中部详情栏*/
+#body_mid{ width: 100%; height: 512px; 
+	padding-left: 75px; padding-right: 75px;display: flex; justify-content: space-between;align-items: flex-start;}
+	
+	/*小图区域！*/
+	#body_mid #body_mid_left{ width: 65px; height: 461px;}
+		#body_mid_left ul{width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: space-between;}
+		#body_mid_left ul li{ width: 65px; height: 65px;display: flex; justify-content: center;align-items: center;}
+		#body_mid_left ul li img{width: 61px; height: 61px;}
+	
+	/*大图区域！*/
+	#body_mid #body_mid_cenert{ width:461px; height: 461px;  position: relative;}
+		#body_mid #body_mid_cenert img{ width: 461px; height: 461px;}
+		#body_mid #body_mid_cenert span{position: absolute;width: 100px;height: 80px;
+		background: rgba(200,200,200,0.5);left: 0;top: 0;display: none;}			
+		#body_mid #body_mid_cenert p{margin: 0;width:461px;height:461px;
+		position: absolute;left: 0;top: 0;}
+	
+	/*右侧信息栏！*/
+	#body_mid #body_mid_right{ width: 646px; height: 461px; position: relative;}
+		#body_mid #body_mid_right #bigimg{width: 461px; height: 461px;position: absolute; left: 0; top:0;
+			overflow: hidden;display: none;}		
+			#body_mid #body_mid_right #bigimg img{position: absolute;left: 0;top: 0; width: 1000px; height: 1000px;}
+	/*商品名称价格信息*/		
+			#body_mid #body_mid_right #body_mid_right_info1{ width: 646px; height: 114px;border-bottom: 1px solid #acacac; }
+				#body_mid_right_info1 span{ display: block; width: 100%; height: 30px; line-height: 30px; }
+				#body_mid_right_info1 span:nth-child(2){ font-size: 14px; color: grey;}
+				#body_mid_right_info1 div{  width: 646px; height: 44px; }
+				#body_mid_right_info1 div *{ display: block; float: left;height: 44px; text-align: center;line-height: 44px;}
+					#body_mid_right_info1 div span{ width: 98px; color: #0061a8; font-weight: bold; font-size: 28px;}
+					#body_mid_right_info1 div a{ width: 98px; font-size: 14px; color:grey; text-decoration: none;}
+					#body_mid_right_info1 div p{ width: 440px;font-size: 14px; color:grey;}
+					
+	/*售后服务信息*/				
+			#body_mid #body_mid_right #body_mid_right_info2{ width: 100%; height: 114px; }
+				#body_mid_right_info2 ul{ width : 100%; height: 100%;}
+				#body_mid_right_info2 ul li{  width : 100%; height: 33%;font-size: 14px; color:grey;}
+				#body_mid_right_info2 ul li a{ color: black; font-weight: bold;}
+	/*购物操作模块*/		
+			#body_mid #body_mid_right #body_mid_right_info3{width: 646px;height:233px;}
+				#body_mid_right_info3 p{ float: left; height: 50px; }
+				#body_mid_right_info3 p:nth-child(1){width:160px;margin-right: 10px;}
+				#body_mid_right_info3 p:nth-child(2) {width:160px;background: #6eae33; border-radius: 5px;
+					text-align: center;}
+				#body_mid_right_info3 p:nth-child(2) a{line-height: 50px;color: white; font-size: 18px;font-weight: bold;}	
+				#body_mid_right_info3 p:nth-child(3){width:80px;font-size: 14px; color:grey; border: 1px solid gainsboro;
+				display: flex; flex-direction: column;align-content: center;}
+				#body_mid_right_info3 p:nth-child(4){width:80px;font-size: 14px; color:grey; border: 1px solid gainsboro;border-left: none;
+				display: flex; flex-direction: column;align-content: center;}
+				#body_mid_right_info3 p:nth-child(5){width:80px;float: right;font-size: 14px; color:grey;}
+
+/*下方大模块*/
+#body_bot{ width: 100%;  padding-left: 75px; padding-right: 75px;}
+/*列表模块*/
+	#body_bot ul { width: 100%; height: 40px; border-bottom: 3px solid #f1f1f1;display: flex; justify-content: center;}	
+		#body_bot ul li{ width: 142px; height: 40px; line-height: 40px; text-align: center;}
+		#body_bot ul li:hover { color: #006ab0; cursor: pointer;}
+/*下拉大列表*/	
+	#body_bot #body_bot_info{ width: 100%;min-height: 200px ;overflow: hidden;margin-top: 40px;}
+/*更多购买模块*/
+	#body_bot #buymore{ width: 100%; height: 336px;margin-bottom: 40px;}
+		#buymore #buymore_title{ width: 100%;height: 40px; background: #ebebeb;line-height: 40px;padding-left: 10px;}
+		#buymore #buymore_box{ width: 100%; height: 296px;  position: relative;overflow: hidden;}
+			#buymore #buymore_box div{ width: 1800px; height:296px ; float: left;}
+			#buymore #buymore_box dl{ width: 240px; height: 296px; float: left; position: absolute;}
+			#buymore #buymore_box dl dt{ width: 100%; display: flex; justify-content: center;}
+			#buymore #buymore_box dl dd{ height: 68px; width: 100%; text-align: center;display: flex; flex-direction: column; justify-content: space-around;padding: 10px;}
+			#buymore #buymore_box p{ width:20px; height: 60px; background:grey; position: absolute; top:108px;color: white;
+					font-size: 20px; line-height: 60px; opacity:0.5; cursor: pointer;}
+					#buymore_next{right: 0;}
+					#buymore_prev{left: 0;}
+					#buymore_next:hover{opacity:0.5;}
+					#buymore_prev:hover{opacity:0.5;}
+
+
+/*页脚模块*/
+footer{ width: 100%; height: 300px;background: #ebebeb;position: relative; }
+	footer #footer_logo_1{ position: absolute; left: 112px; top: 0;}
+	footer #footer_logo_2{ position: absolute; right: 140px; top: 200px;} 
+	footer a{ text-decoration: none;}
+	footer #footer_top{ width: 100%; height: 30px; background: #e6e6e6; }
+	footer #footer_middle{ width: 100%; height: 170px; }
+	footer #footer-bottom{ width: 100%; height: 100px;display: flex; justify-content: center; align-items: flex-start;}
+	footer #footer_connect{width: 1008px; height: 175px; position: absolute;
+	top: 0; left: 266px;}
+		#footer_connect dl{ width: 168px; height: 175px; float: left; }
+			#footer_connect dl dt{ width: 100%; height: 30px; line-height: 30px;}
+			#footer_connect dl dt a{ font-size: 14px; color: black;}
+			#footer_connect dl dd{ width: 100%; height: 145px; border-top: 16px; line-height: 25px;
+			display: flex; flex-direction: column;}
+			#footer_connect dl dd a{font-size: 10px; color: #686868;}
+
